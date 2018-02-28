@@ -1,7 +1,7 @@
 public class Rocket implements SpaceShip {
     private double money;
-    private int maxItemWeight;
-    private int weight;
+    private double maxItemWeight;
+    private double weight;
     private int itemsWeight = 0;
 
     public Rocket(int maxItemWeight, int weight, double money) {
@@ -14,11 +14,11 @@ public class Rocket implements SpaceShip {
         return money;
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return weight;
     }
 
-    public int getMaxItemWeight() {
+    public double getMaxItemWeight() {
         return maxItemWeight;
     }
 

@@ -19,9 +19,6 @@ public class Simulation {
                 String itemName = getNameFromLine(currentLine);
                 int weight = getWeightFromLine(currentLine);
 
-                System.out.println(itemName);
-                System.out.println(weight);
-
                 items.add(new Item(itemName, weight));
             }
 
@@ -41,17 +38,11 @@ public class Simulation {
         return Integer.valueOf(weight) / 1000;
     }
 
-    public ArrayList<U1> loadU1() {
-        ArrayList<Item> phase_1_items = loadItems(PHASE_1_FILE_NAME);
-        ArrayList<Item> phase_2_items = loadItems(PHASE_2_FILE_NAME);
-        ArrayList<U1> u1s = new ArrayList<>();
-
-        ArrayList<Item> all_items = new ArrayList<>();
-        all_items.addAll(phase_1_items);
-        all_items.addAll(phase_2_items);
-
+    public ArrayList<Rocket> loadU1(ArrayList<Item> all_items) {
+        ArrayList<Rocket> u1s = new ArrayList<>();
         U1 currentRocket = new U1();
         int i = 0;
+
         while (i < all_items.size()) {
             Item item = all_items.get(i);
 
@@ -67,17 +58,11 @@ public class Simulation {
         return u1s;
     }
 
-    public ArrayList<U2> loadU2() {
-        ArrayList<Item> phase_1_items = loadItems(PHASE_1_FILE_NAME);
-        ArrayList<Item> phase_2_items = loadItems(PHASE_2_FILE_NAME);
-        ArrayList<U2> u2s = new ArrayList<>();
-
-        ArrayList<Item> all_items = new ArrayList<>();
-        all_items.addAll(phase_1_items);
-        all_items.addAll(phase_2_items);
-
+    public ArrayList<Rocket> loadU2(ArrayList<Item> all_items) {
+        ArrayList<Rocket> u2s = new ArrayList<>();
         U2 currentRocket = new U2();
         int i = 0;
+
         while (i < all_items.size()) {
             Item item = all_items.get(i);
 
@@ -95,9 +80,14 @@ public class Simulation {
 
     public double runSimulation(ArrayList<Rocket> rockets) {
         double totalCount = 0;
-        for (Rocket rocket: rockets) {
-            if (!rocket.land() || !rocket.launch()) {
-                totalCount += rocket.getMoney();
+
+        int i = 0;
+        while (i < rockets.size()) {
+            Rocket rocket = rockets.get(i);
+            totalCount += rocket.getMoney();
+
+            if (rocket.land() && rocket.launch()) {
+                i++;
             }
         }
 
