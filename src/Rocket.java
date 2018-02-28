@@ -8,6 +8,14 @@ public class Rocket implements SpaceShip {
         this.weight = weight;
     }
 
+    public int getWeight() {
+        return weight;
+    }
+
+    public int getMaxItemWeight() {
+        return maxItemWeight;
+    }
+
     @Override
     public boolean launch() {
         return true;
