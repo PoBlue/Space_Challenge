@@ -1,6 +1,6 @@
 public class U1 extends Rocket {
     public U1() {
-        super(18, 10);
+        super(18, 10, 1);
     }
 
     @Override

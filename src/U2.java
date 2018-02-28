@@ -1,6 +1,6 @@
 public class U2 extends Rocket {
     public U2() {
-        super(29,18);
+        super(29,18, 1.2);
     }
 
     @Override
