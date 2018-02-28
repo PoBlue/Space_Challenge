@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83bab960-e8ba-4364-aef3-f071542898f9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/phase-1.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/phase-2.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Simulation.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Rocket.java" afterPath="$PROJECT_DIR$/src/Rocket.java" />
-      <change beforePath="$PROJECT_DIR$/src/U1.java" afterPath="$PROJECT_DIR$/src/U1.java" />
-      <change beforePath="$PROJECT_DIR$/src/U2.java" afterPath="$PROJECT_DIR$/src/U2.java" />
+      <change beforePath="$PROJECT_DIR$/src/Simulation.java" afterPath="$PROJECT_DIR$/src/Simulation.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,8 +56,8 @@
       <file leaf-file-name="Simulation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Simulation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1440">
-              <caret line="96" column="8" lean-forward="false" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+            <state relative-caret-position="581">
+              <caret line="92" column="18" lean-forward="false" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1083#1084#0" expanded="true" />
@@ -124,10 +119,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/SpaceShip.java" />
         <option value="$PROJECT_DIR$/src/Item.java" />
-        <option value="$PROJECT_DIR$/src/Simulation.java" />
         <option value="$PROJECT_DIR$/src/U1.java" />
         <option value="$PROJECT_DIR$/src/Rocket.java" />
         <option value="$PROJECT_DIR$/src/U2.java" />
+        <option value="$PROJECT_DIR$/src/Simulation.java" />
       </list>
     </option>
   </component>
@@ -400,8 +395,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Simulation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="96" column="8" lean-forward="false" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+        <state relative-caret-position="581">
+          <caret line="92" column="18" lean-forward="false" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1083#1084#0" expanded="true" />

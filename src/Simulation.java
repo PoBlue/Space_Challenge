@@ -93,8 +93,15 @@ public class Simulation {
         return u2s;
     }
 
-    public void runSimulation() {
-        
+    public double runSimulation(ArrayList<Rocket> rockets) {
+        double totalCount = 0;
+        for (Rocket rocket: rockets) {
+            if (!rocket.land() || !rocket.launch()) {
+                totalCount += rocket.getMoney();
+            }
+        }
+
+        return totalCount;
     }
 
 }
